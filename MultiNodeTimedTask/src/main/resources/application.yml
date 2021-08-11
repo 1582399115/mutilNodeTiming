@@ -1,0 +1,12 @@
+server:
+  port: 8080
+spring:
+  application:
+    name: ics-params-check
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1/quartzdb?useUnicode=true&characterEncoding=utf8&serverTimezone=GMT%2B8&autoReconnect=true
+    #    url: jdbc:mysql://127.0.0.1:3306/ctftest?useUnicode=true&characterEncoding=utf8&serverTimezone=UTC&autoReconnect=true
+    username: root
+    password: root

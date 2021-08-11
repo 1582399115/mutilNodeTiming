@@ -1,0 +1,17 @@
+server:
+  port: 8083
+
+logging:
+  file: logback.xml
+
+spring:
+  dataSource:
+#    url: jdbc:mysql://127.0.0.1:3306/quartzdb?characterEncoding=utf-8&autoReconnect=true&allowMultiQueries=true&useSSL=true&zeroDateTimeBehavior=convertToNull
+    url: jdbc:mysql://127.0.0.1:3306/quartzdb?useUnicode=true&characterEncoding=utf8&serverTimezone=GMT%2B8&autoReconnect=true
+    username: root
+    password: root
+    type: com.alibaba.druid.pool.DruidDataSource
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+quartz:
+  cronExpression: 0/5 * * * * ?
